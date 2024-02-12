@@ -10,9 +10,36 @@
       <h1>Travers DOM Of Element</h1>
     </header>
     <main>
-      <section>
+      <section class="container">
         <h1>Get the Parent Element</h1>
+        <h3>Introduction to parentNode attribute</h3>
+        <p>find parentNode property</p>
+        <code>let parent = node.parentNode</code>
+        <ul class="parentNode">
+          <li class="parent-child">The parentNode is read-only</li>
+          <li class="parent-child">
+            The Document and DocumentFragment nodes do not have a parent.
+            Therefore, the parentNode will always be null
+          </li>
+          <li class="parent-child">
+            if you create a new node but not attached it to the DOM tree, the
+            parentNode of that node also be null
+          </li>
+        </ul>
       </section>
+      <section>
+        <h3>Get the child element</h3>
+        <ul id="parent">
+          <li class="child">by parent.firstChild</li>
+          <li class="child">by parent.firstElementChild</li>
+          <li class="child">by parent.lastChild</li>
+          <li class="child">by parent.lastElementChild</li>
+          <li class="child">by parent.childNodes</li>
+          <li class="child">by parent.children</li>
+        </ul>
+      </section>
+
+      <script src="./travers.js"></script>
     </main>
   </body>
 </html>
