@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my DOM</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum
+        dicta vero aspernatur iure? Maxime voluptatem corrupti doloribus, eos
+        doloremque assumenda, repudiandae quod voluptas facilis libero saepe
+        nostrum alias magnam!
+      </p>
+    </header>
+    <main>
+      <section>
+        <h1>My Awesome DOM de baba</h1>
+        <ul>
+          <li>Jalali set</li>
+          <li>Shafayet</li>
+          <li>Bonobash</li>
+        </ul>
+      </section>
+      <section>
+        <h1 id="fruit-title">Fruits i like it</h1>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Carrot</li>
+        </ul>
+      </section>
+      <section id="place">
+        <h1 id="place-title">Place i like to visit</h1>
+        <ul>
+          <li class="all-bon">Bandorbon</li>
+          <li class="all-bon">Katabon</li>
+          <li class="all-bon">Sundorbon</li>
+          <li>Shalbon</li>
+        </ul>
+      </section>
+
+      <ul>
+        <li>
+          <button onclick="console.log('Hello')">Console Button</button>
+        </li>
+        <li>
+          <button onclick="this.style.backgroundColor ='yellow'">
+            Make Yellow
+          </button>
+        </li>
+        <li>
+          <button onclick="makeRed(this)">Make Red</button>
+        </li>
+        <li>
+          <button id="make-blue">Make blue</button>
+        </li>
+        <li>
+          <button id="make-tomato">Make Tomato</button>
+        </li>
+        <li>
+          <button id="make-orange">Make Orange</button>
+        </li>
+      </ul>
+
+      <input type="radio" name="language" value="JavaScript" />
+      <input type="radio" name="language" value="TypeScript" />
+
+      <ul id="menu">
+        <li class="item">HTML</li>
+        <li class="item">CSS</li>
+        <li class="item highlight">JavaScript</li>
+        <li class="item">TypeScript</li>
+      </ul>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
